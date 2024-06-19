@@ -1,0 +1,58 @@
+/* Estilo para el contenedor de películas */
+body{
+  background-color: #060422;
+}
+
+h1{
+  color: rgb(217, 227, 236);
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: relative;
+  padding: 1px;
+  
+}
+h2{
+  color: #8f8fe9;
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  padding: 15px;
+}
+.movies-container {
+  color: #0f0874;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6rem;
+  padding: 2rem;
+}
+
+/* Estilo para cada película */
+div.movie {
+  width: 300px;
+  background-color: #e7e7eb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 1rem; /* Espacio entre películas */
+}
+.movie:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para la imagen de la película */
+.movie img {
+  width: 19rem;
+  height: 25rem;
+  border-radius: 20px solid #ffffff;
+  border-color: #0f0874;
+}
+
+/* Estilo para el título de la película */
+.movie h3 {
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0;
+}
