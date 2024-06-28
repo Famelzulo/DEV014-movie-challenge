@@ -28,33 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   router();
 });
 
- const Home = () => {
-  const section = document.createElement('section');
-  const header = document.createElement('header');
-  const title = document.createElement('h1');
-  title.textContent = 'Home';
 
-  const filter = filterByYear();
-  const movies = document.createElement('div');
-
-  section.appendChild(header);
-  section.appendChild(title);
-  section.appendChild(filter);
-  section.appendChild(movies);
-
-  filter.addEventListener('change', async (e) => {
-      try {
-          const year = e.target.value;
-          const response = await getMoviesByYear(year);
-          movies.innerHTML = '';
-          const filterResult = renderCards(response);
-          movies.appendChild(filterResult);
-      } catch (err) {
-          console.log(err);
-      }
-  });
-
-  return section;
-};
 
 

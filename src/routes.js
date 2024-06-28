@@ -1,5 +1,4 @@
-// routes.js
-import { fetchMovies, fetchMovieDetails } from './counter.js';
+import { fetchMovies, fetchMovieDetails } from './counter.js'; // Ajusta la ruta si es necesario
 
 export const routes = {
   '/': homeView,
@@ -7,16 +6,13 @@ export const routes = {
   '/movie/:id': movieDetailsView,
   '/error': errorView
 };
-//aumentamos una vista mas moviedetailsview
 
 export function homeView() {
   document.getElementById('app').innerHTML = `
-    
-<div id="movies-container"></div>
+    <div id="movies-container"></div>
     <div id="image-container">
-    
       <img id="top-img" src="https://i.ytimg.com/vi/BKLTFN4rgSU/hqdefault.jpg">
-
+    </div>
   `;
   const container = document.getElementById('movies-container');
   fetchMovies(container);
@@ -37,9 +33,6 @@ export function movieDetailsView(id) {
 export function errorView() {
   document.getElementById('app').innerHTML = `
     <h2>404 Not Found</h2>
-    <p>The Pagina no encontrada.</p>
+    <p>La página no fue encontrada.</p>
   `;
 }
-
-  //crear elemento html aqui con id => movies-container(por id)
-//crear 
