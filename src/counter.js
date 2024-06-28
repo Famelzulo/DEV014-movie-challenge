@@ -4,6 +4,8 @@ import { navigateTo } from './router.js';
 const apiKey = '3a78d4ac318775c66a60b0c85e15a197';
 const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}`;
 
+
+
 export async function fetchMovies(container) {
   try {
     const response = await fetch(apiUrl);

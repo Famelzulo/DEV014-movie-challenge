@@ -11,9 +11,12 @@ export const routes = {
 
 export function homeView() {
   document.getElementById('app').innerHTML = `
-    <h2>Welcome to the Movie App</h2>
-    <p>Selecciona el genero o año en el filtro de las pleiculas  .</p>
-    <div id="movies-container"></div>
+    
+<div id="movies-container"></div>
+    <div id="image-container">
+    
+      <img id="top-img" src="https://i.ytimg.com/vi/BKLTFN4rgSU/hqdefault.jpg">
+
   `;
   const container = document.getElementById('movies-container');
   fetchMovies(container);
@@ -38,5 +41,5 @@ export function errorView() {
   `;
 }
 
-//aqui son pormesas_  //crear elemento html aqui con id => movies-container(por id)
+  //crear elemento html aqui con id => movies-container(por id)
 //crear 
