@@ -1,3 +1,5 @@
+
+
 import { routes } from './routes.js';
 
 export function router() {
@@ -29,3 +31,4 @@ export function navigateTo(url) {
   history.pushState(null, null, url);
   router();
 }
+

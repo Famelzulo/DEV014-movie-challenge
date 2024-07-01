@@ -13,11 +13,11 @@ body {
 
 #top-img {
 
-  width: 85rem;
+  width: 84rem;
   height: 24rem;
   border-color: #0f0874;
   position: absolute;
-  top: 120px;
+  top: 135px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -35,11 +35,12 @@ h1 {
   background-color: #0b0b50;
   color: rgb(217, 227, 236);
   font-size: 4rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   position: relative;
   padding: 40px;
-  margin: -40px -3px;
+  margin: -32px -18px;
   margin-top: -5;
+  z-index: -5;
 
 }
 
@@ -172,4 +173,19 @@ p {
 } 
  .filter-container{
 color: aqua;
+ }  
+
+ #filter{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #10093f;
+  margin: 20px;
+  padding: 20px 20px;
+  font-size: 23px;
+  color: rgb(245, 241, 241);
+  transform: translateY(-215rem);
+  margin-left: 66rem;
+ }
+
+ .select{
+  color: aqua;
  }
