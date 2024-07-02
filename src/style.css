@@ -146,16 +146,16 @@ nav {
 
 h2 {
   text-decoration:underline;
-  font-size: 42px;
+  font-size: 38px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: 4rem;
-  margin-left: 250px;
+  margin-top: 5rem;
+  margin-left: 230px;
 }
 
 p {
   color: #e7e7eb;
-  font-size: 22px;
-  width: 52rem;
+  font-size: 15px;
+  width: 42rem;
   word-wrap: break-word;
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: relative;
@@ -163,11 +163,11 @@ p {
 
 }
 #movie-details img{
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 15px;
-   margin-top: -180px;
-  margin-left: 56rem;
+   margin-top: -170px;
+  margin-left: 46rem;
   border:15px;
   border:10px solid #0b0b50;
 } 
@@ -183,7 +183,7 @@ color: aqua;
   font-size: 23px;
   color: rgb(245, 241, 241);
   transform: translateY(-215rem);
-  margin-left: 65rem;
+  margin-left: 58rem;
  }
 
 #select{
