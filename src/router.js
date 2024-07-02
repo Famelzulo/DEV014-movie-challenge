@@ -1,4 +1,4 @@
-
+//las rutas de nuestro SPA
 
 import { routes } from './routes.js';
 

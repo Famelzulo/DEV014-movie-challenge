@@ -1,4 +1,6 @@
-import { fetchMovies, fetchMovieDetails, getMovieFilter , displayMovies} from './api.js'; // Ajusta la ruta si es necesario
+//todo lo relacionado a las vistas
+
+import { fetchMovies, fetchMovieDetails, getMovieFilter , displayMovies} from './app.js'; // Ajusta la ruta si es necesario
 
 export const routes = {
   '/': homeView,
@@ -6,6 +8,7 @@ export const routes = {
   '/movie/:id': movieDetailsView,
   '/error': errorView
 };
+//primera vista
 
 export function homeView() {
   document.getElementById('app').innerHTML = `
@@ -16,7 +19,7 @@ export function homeView() {
      <div id="filter">
       <label for="releaseDate">Filter by year</label>
       <select name="releaseDate" id="releaseDate">
-          <option disabled selected value > selecciona</option>
+          <option disabled selected value >Buscador</option>
           <option value="2021">2021</option>
           <option value="2022">2022</option>
           <option value="2023">2023</option>
@@ -37,16 +40,17 @@ export function homeView() {
 
   ;
 
-  //linkear con eventlistener
   const container = document.getElementById('movies-container');
   fetchMovies(container);
 }
+//vista de las peliculas
 
 export function moviesView() {
   document.getElementById('app').innerHTML = `<div id="movies-container"></div>`;
   const container = document.getElementById('movies-container');
   fetchMovies(container);
 }
+//vistas de los detalles de una pelicula individual
 
 export async function movieDetailsView(id) {
   document.getElementById('app').innerHTML = `<div id="movie-details"></div>`;
@@ -60,6 +64,8 @@ export async function movieDetailsView(id) {
       <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="${data.title}">
     `
   }
+
+//pagina de error 
 
 export function errorView() {
   document.getElementById('app').innerHTML = `

@@ -1,17 +1,8 @@
 import './style.css';
-import { fetchMovies } from './api.js';
+import { fetchMovies } from './app.js';
 import { navigateTo, router } from './router.js';
-import { getMovieFilter, displayMovies } from './api.js';
-import { homeView } from './routes.js';
 
 
-// document.getElementById('app').innerHTML = `
-//     <nav>
-//       <a href="/" data-link>Home</a>
-//       <a href="/movies" data-link>Movies</a>
-//     </nav>
-//     <div id="movies-container"></div>
-//   `;
 
 router();
 
