@@ -1,0 +1,191 @@
+/* Estilo para el contenedor de películas */
+body {
+  background-color: #0a0625;
+  width: 100%;
+  height: 30rem;
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+
+#top-img {
+
+  width: 84rem;
+  height: 24rem;
+  border-color: #0f0874;
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#image-container {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+
+}
+
+h1 {
+  background-color: #0b0b50;
+  color: rgb(217, 227, 236);
+  font-size: 4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  padding: 40px;
+  margin: -32px -18px;
+  margin-top: -5;
+  z-index: -5;
+
+}
+
+h3 {
+  color: #bcb8e0;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  padding: 10px;
+}
+
+.movie h3 {
+  background-color: #e7e7eb;
+  font-size: 16px;
+  margin: 10px 0 0;
+}
+
+#movies-container {
+  color: #0f0874;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 42px;
+  column-gap: 40px;
+  padding: 7rem;
+  margin-top: 20rem;
+  max-width: calc(100% - 4rem - 1px);
+  flex: 1 1 calc(25% - 2rem);
+}
+
+
+nav {
+  background-color: #f5f4f4;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/* Estilo para cada película */
+.movie {
+  width: 250px;
+  height: 415px;
+  background-color: #060422;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 1rem;
+
+}
+
+.movie:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para la imagen de la película */
+.movie  img  {
+
+  width: 19rem;
+  height: 25rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  border: 18px;
+}
+
+/* Estilo para el título de la película */
+.movie h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #0c093f;
+  color: #e0dde7;
+  font-size: 16px;
+  text-align: center;
+  padding: 0.5rem;
+  margin: -18px;
+  top: -20px;
+}
+
+
+/* Estilo para los detalles de la película */
+#movie-details-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+
+#movie-details-container div {
+  display: flex;
+  max-width: calc(100% - 10rem - 20px);
+}
+
+/*imagen del SPA*/
+#movie-details {
+  display: contents;
+  color: wheat;
+  position: absolute;
+  margin-top: -90px;
+  align-items: flex-start;
+  width: 40%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-decoration:underline;
+  font-size: 42px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 4rem;
+  margin-left: 250px;
+}
+
+p {
+  color: #e7e7eb;
+  font-size: 22px;
+  width: 52rem;
+  word-wrap: break-word;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: relative;
+  text-align: right;
+
+}
+#movie-details img{
+  width: 30rem;
+  height: 30rem;
+  border-radius: 15px;
+   margin-top: -180px;
+  margin-left: 56rem;
+  border:15px;
+  border:10px solid #0b0b50;
+} 
+ .filter-container{
+color: aqua;
+ }  
+
+ #filter{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #10093f;
+  margin: 20px;
+  padding: 20px 20px;
+  font-size: 23px;
+  color: rgb(245, 241, 241);
+  transform: translateY(-215rem);
+  margin-left: 65rem;
+ }
+
+#select{
+  color: #10093f;
+}
